@@ -7,7 +7,7 @@ gem 'rails', '~> 4.2.6'
 gem 'mysql2', '~> 0.4.4'
 gem 'rake', '~> 11.1.2'
 gem 'jbuilder', '~> 2.4.0'
-
+ gem 'bcrypt', platforms: :ruby
 # simulate environment variables
 gem 'dotenv-rails', '~> 2.1.1', :require => 'dotenv/rails-now'
 
@@ -75,8 +75,8 @@ group :development, :test do
   gem 'capybara', '~> 2.7.1'
   # gem 'capybara-webkit', '~> 1.11.1'
   gem 'guard-rspec', '~> 4.7.0'
-  gem 'spring', '~> 1.7.1'
-  gem 'spring-commands-rspec', '~> 1.0.4'
+  # gem 'spring', '~> 1.7.1'
+  # gem 'spring-commands-rspec', '~> 1.0.4'
   gem 'fuubar', '~> 2.0.0'
   gem 'guard-livereload', '~> 2.5.2'
   gem 'capistrano', '3.5.0', require: false
@@ -91,6 +91,8 @@ group :development, :test do
   gem 'sqlite3'
 
 end
+
+
 
 group :development, :test, :heroku do
   # seed script gems
@@ -109,6 +111,7 @@ group :development do
   gem 'thin', '~> 1.6.4'
   gem 'rack-mini-profiler', '~> 0.10.1'
   gem 'bullet', '~> 5.1.0'
+
 end
 
 group :production do
