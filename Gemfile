@@ -56,7 +56,7 @@ gem 'simple_form', '~> 3.2.1'
 gem 'cocoon', '~> 1.2.9'
 gem 'redcarpet', '~> 3.3.4'
 gem 'tzinfo-data'
-gem 'sqlite3'
+
 
 # iCalendar export
 gem 'icalendar', '~> 2.3.0'
@@ -88,6 +88,8 @@ group :development, :test do
   gem 'codeclimate-test-reporter', '~> 0.5.0'
   gem 'database_cleaner', '~> 1.5.3'
   gem 'rubocop', '~> 0.40.0', require: false
+  gem 'sqlite3'
+
 end
 
 group :development, :test, :heroku do
