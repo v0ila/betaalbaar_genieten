@@ -1,0 +1,72 @@
+// Styles for Select2 to make it visually integrate better with bootstrap
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.select2-results .select2-highlighted {
+  background: $dropdown-link-hover-bg;
+  color: $text-color;
+}
+
+.select2-drop {
+  border: 1px solid $input-border;
+  border-top: 0;
+}
+
+.select2-container div {
+  border-left: 1px solid $input-border;
+}
+
+.select2-search input {
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+  border-radius: $input-border-radius;
+}
+
+.select2-container {
+  width: 100%;
+}
+
+//
+// Multi-Select
+// =============================================================================
+
+.select2-container-multi .select2-choices, .select2-container-multi.select2-container-active .select2-choices {
+  padding-right: 5px;
+  border-radius: $input-border-radius;
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  @include transition(#{border linear .2s, box-shadow linear .2s});
+}
+
+.select2-container-multi.select2-container-active .select2-choices {
+  border-color: rgba(82,168,236,.8);
+  outline: 0;
+  outline: thin dotted \9; /* IE6-9 */
+  @include box-shadow(#{inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6)});
+}
+
+.select2-container-multi .select2-choices {
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+}
+
+//
+// Single Select
+// =============================================================================
+
+.select2-container .select2-choice {
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+}
+
+.select2-dropdown-open .select2-choice {
+  border-radius: $input-border-radius;
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  @include transition(#{border linear .2s, box-shadow linear .2s});
+}
+
+.select2-container-active .select2-choice:focus {
+  border-color: rgba(82,168,236,.8);
+  outline: 0;
+  outline: thin dotted \9; /* IE6-9 */
+  @include box-shadow(#{inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6)});
+}

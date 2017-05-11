@@ -1,0 +1,10 @@
+It looks like you have overdue equipment!
+
+Please return the following equipment to us as soon as possible. Until then you will be charged a daily late fee of @late_fee@.
+
+@equipment_list@
+
+Failure to return equipment will result in the levying of replacement fees, and potential revocation of borrowing privileges.
+
+Your reservation number is @reservation_id@.
+

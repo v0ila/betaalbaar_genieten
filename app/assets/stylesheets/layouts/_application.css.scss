@@ -1,0 +1,78 @@
+// Subnav from Bootstrap Site (Heavily Modified)
+.subnav {
+  width: 100%;
+  background-color: #eeeeee;
+  margin-bottom: $line-height-base;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+}
+.subnav .nav {
+  margin-bottom: 0;
+}
+
+@media (min-width: 980px) {
+  .subnav-fixed {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1020; // 10 less than .navbar-fixed to prevent any overlap
+		border-radius: 0;
+	  @include transition(all 220ms ease);
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include box-shadow(#{0 2px 5px rgba(0, 0, 0, 0.2)});
+  }
+  .subnav .nav > li:first-child > a,
+  .subnav .nav > li:first-child > a:hover {
+	   border-radius: 0;
+  }
+}
+
+  @media (max-width: 768px) {
+    // Un-stickify subnav on small screens
+    .subnav {
+      position: static;
+
+      li:first-child {
+        display: none;
+      }
+    }
+  }
+
+.dropdown-menu li.active {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+  color: #BDBDBD;
+  white-space: nowrap;
+}
+
+div#searchbox {
+	margin-bottom: 10px;
+}
+
+div#sidebar-right {
+	margin-top: 20px;
+
+	form {
+		margin-bottom: 0;
+	}
+}
+
+td a {
+// to make table cells with links clickable throughout
+// only works when ALL the text in the cell is ONE link
+// as in no other links or text may be present
+// because it then gives each element its own line
+  display: block;
+}
+
+// make p blocks in the flash margin-less
+.alert p:last-child {
+  margin: 0;
+}

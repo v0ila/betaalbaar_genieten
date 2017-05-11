@@ -1,0 +1,24 @@
+/* Following block is for the autocomplete feature */
+
+ul.ui-autocomplete {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #999;
+  cursor: pointer;
+}
+
+ul.ui-autocomplete li {
+  background-color: #FFF;
+  border-top: solid 1px #DDD;
+  margin: 0;
+  padding: 3px !important; 
+}
+
+ul.ui-autocomplete li.ui-state-focus {
+  color: $component-active-color;
+  background-color: $component-active-bg;
+}
+
+/* end autocomplete */
