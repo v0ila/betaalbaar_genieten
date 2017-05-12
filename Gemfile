@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 ruby '2.3.3' # Version in .ruby-version must match
 
@@ -7,7 +7,6 @@ gem 'rails', '~> 4.2.6'
 gem 'mysql2', '~> 0.4.4'
 gem 'rake', '~> 11.1.2'
 gem 'jbuilder', '~> 2.4.0'
- gem 'bcrypt', platforms: :ruby
 # simulate environment variables
 gem 'dotenv-rails', '~> 2.1.1', :require => 'dotenv/rails-now'
 
@@ -27,6 +26,7 @@ gem 'net-ldap', '~> 0.14.0'
 
 # attachments
 gem 'paperclip', '~> 4.3.6'
+
 
 gem 'coffee-script-source', '1.8.0'
 
